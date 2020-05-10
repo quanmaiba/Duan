@@ -1,0 +1,211 @@
+
+.dropdowns {
+     width:100%;
+     position:absolute;
+     top:58px;
+     left:0;
+     z-index:10000;
+     display:none;
+     z-index:900000;
+     background-color:#fafafa;
+     
+
+}
+
+.toggleMenu {
+    text-indent:-9999em;
+}
+
+/* general navigation background colors */
+.ul-nav-mobile {
+     background: #fafafa;
+     border-top:solid 1px #d7d7d7;
+     display:none;
+}
+
+/* general navigation link font color */
+.ul-nav-mobile a {
+    color:#666;
+    display:block;
+}
+
+/* first level items borders */
+.ul-nav-mobile > li {
+	
+}
+
+
+
+
+/* second level navigation colors */
+.ul-nav-mobile li li a {
+    background: #ededed;
+    border-bottom: 1px solid #fff;
+    color:#464646;
+    font-family:open-sans,Arial,Helvetica,sans-serif;
+    font-size:14px;
+    font-weight:700;
+}
+
+/* third level navigation colors */
+.ul-nav-mobile li li li a {
+    background:#fff;
+    border-bottom: 1px solid #d7d7d7;
+}
+    .ul-nav-mobile li li li:last-child a {
+        border-bottom:none;
+    }
+
+/* ---------------- */
+/*      layout      */
+/* -----------------*/
+
+/* main div */
+
+
+/* small screens menu button */
+a.toggleMenu {
+	padding: 10px 0;
+	text-align: center;
+}
+
+/* second and third level menus */
+.ul-nav-mobile ul {
+	width:9em;
+}
+
+/* general paddings and other stuff */
+.ul-nav-mobile a {
+	padding: 5px 10px;
+}
+
+/* parents that have submenus */
+
+
+/* small screen adjustments*/
+@media screen and (max-width: 768px) {
+	.ul-nav-mobile ul {
+		width: 100%;
+	}
+}
+
+.dropdowns nav, .dropdowns ul, .dropdowns li, .dropdowns a  {margin: 0; padding: 0;}
+
+.dropdowns a {text-decoration: none;}
+
+.toggleMenu {
+    
+}
+.ul-nav-mobile {
+    list-style: none;
+     *zoom: 1;
+}
+.ul-nav-mobile:before,
+.ul-nav-mobile:after {
+    content: " "; 
+    display: table; 
+}
+.ul-nav-mobile:after {
+    clear: both;
+}
+.ul-nav-mobile ul {
+    list-style: none;
+}
+.ul-nav-mobile a {
+    padding: 10px 15px;
+}
+.ul-nav-mobile li {
+    position: relative;
+    
+}
+
+.ul-nav-mobile > li {
+    border-bottom:solid 1px #d7d7d7;
+    font-weight:700;
+}
+.ul-nav-mobile li:last-child
+{
+    border-bottom:none;
+}
+.ul-nav-mobile > li > .parent {
+    background-image: url("../../App_Themes/images/rightArrow.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-weight:700;
+}
+.ul-nav-mobile > li > a {
+    display: block;
+    font-family:open-sans-bold,Arial,Helvetica,sans-serif;
+    color:#313131;
+}
+.ul-nav-mobile li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.ul-nav-mobile > li.hover > ul {
+    left: 0;
+}
+.ul-nav-mobile li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.ul-nav-mobile>li:first-child
+{
+    background-color:#2a3788 !important;
+}
+.ul-nav-mobile>li:first-child a{
+    color:#fff;
+}
+.ul-nav-mobile li li a {
+    display: block;
+    position: relative;
+    z-index:100;
+}
+.ul-nav-mobile li li li a {
+    z-index:200;
+}
+    .ul-nav-mobile > li.hover {
+        background-color: #7ac943;
+        
+    }
+.ul-nav-mobile > li.hover>a{
+    color:#fff;
+    background-image:none !important;
+}
+
+@media screen and (max-width: 999px) {
+    .active {
+        display: block;
+    }
+    .ul-nav-mobile > li {
+        float: none;
+        width:100%;
+        display:block;
+        text-align:left;
+    }
+    .ul-nav-mobile > li > .parent {
+        background-position: 98% 50%;
+    }
+    .ul-nav-mobile li li .parent {
+        background-image: url("../../App_Themes/images/rightArrow.png");
+        background-repeat: no-repeat;
+        background-position: 98% 50%;
+    }
+    .ul-nav-mobile > li.hover 
+        {
+            background-image: url('../../App_Themes/images/arrd.png');
+            background-repeat:no-repeat;
+            background-position:98% 17px;
+            
+        }
+    .ul-nav-mobile ul {
+        display: block;
+        width: 100%;
+    }
+    
+   .ul-nav-mobile > li.hover > ul , .ul-nav-mobile li li.hover ul {
+        position: static;
+    }
+
+
+}

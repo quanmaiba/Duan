@@ -1,0 +1,150 @@
+﻿@{
+    ViewData["Title"] = "Giáo Viên";
+}
+
+<h1>Giáo Viên</h1>
+<div>
+    <a href="javascripts:void(0);"
+       class="btn btn-outline-success"
+       onclick="giaoVien.openAddEditModal()">Tạo Giáo Viên</a>
+</div>
+
+<div class="row" style="width:100%">
+    <div class="col-12">
+        <table class="table table-bordered table-hover table-striped" style="width:100%;" id="tbgiaoVien">
+        </table>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="addEditModel">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form id="frmAddEditClass">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Tạo Giáo Viên</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <input hidden id="GiaoVienId" name="GiaoVienId" value="0" />
+                    <div class="row form-group">
+                        <div class="col-6 col-md-6">
+                            <div class="col">
+                                <label class="float-left">Tên Giáo Viên</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="HoTenGV" name="HoTenGV"
+                                       data-rule-required="true"
+                                       data-msg-required="Đây là trường bắt buộc." />
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="col">
+                                <label class="float-left">Ngày Sinh</label>
+                            </div>
+                            <div class="col">
+                                <input type="date" class="form-control" id="DOB" name="DOB"
+                                       data-rule-required="true"
+                                       data-msg-required="Đây là trường bắt buộc." />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-6 col-md-6">
+                            <div class="col">
+                                <label class="float-left">Giới Tính</label>
+                            </div>
+                            <div class="col">
+                                <select class="form-control" id="GioiTinh" name="GioiTinh"></select>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="col">
+                                <label class="float-left">Email Nè!</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="Email" name="Email"
+                                       data-rule-required="true"
+                                       data-msg-required="Đây là trường bắt buộc." />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-6 col-md-6">
+                            <div class="col">
+                                <label class="float-left">Ảnh ĐẤY!</label>
+                            </div>
+                            <div class="col">
+
+                                @*<input type="file" onchange="encode();" class="form-control" id="IMG" name="onchange="encode();"" />*@
+                                <input id="IMGFile" class="form-control" type="file" onchange="giaoVien.encodeImageFileAsURL(this)" placeholder="Chọn ảnh bạn muốn sử dụng" />
+
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6">
+                            <div class="col">
+                                <label class="float-left">Địa Chỉ</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="DiaChi" name="DiaChi"
+                                       data-rule-required="true"
+                                       data-msg-required="Đây là trường bắt buộc." />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-1"></div>
+                        <div class="col-3 col-md-3">
+                            @*<input type="file" onchange="encode();" class="form-control" id="IMG" name="onchange="encode();"" />*@
+                            <img src=""
+                                 id="Img" name="Img" alt=" Không nhận dạng được" style="width:100%;height:100%;" />
+
+                        </div>
+                        <div class="col-8"></div>
+                    </div>
+
+                    @*<div>Ảnh Được Chọn</div>
+                        <div class="row form-group">
+
+                            <div class="col-md-12">
+                                <p id="hienAnh"> Chưa Có Ảnh</p>
+                                <input type="file" onchange="encode();" class="form-control" id="IMG" name="onchange="encode();"" />
+
+                            </div>
+                        </div>*@
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <a href="javascripts:void(0);"
+                       class="btn btn-outline-info"
+                       onclick="giaoVien.save()">Lưu</a>
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Hủy</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section css{
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/datatables/css/jquery.dataTables.css" rel="stylesheet" />
+}
+
+
+@section Scripts{
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/bootbox.js/bootbox.min.js"></script>
+    <script src="~/lib/datatables/js/jquery.dataTables.js"></script>
+    <script src="~/js/giaovien/giaoVien.js"></script>
+
+}

@@ -1,0 +1,8 @@
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.Domain\bin\Debug\netstandard2.0\InventoryManagement.Domain.deps.json
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.Domain\bin\Debug\netstandard2.0\InventoryManagement.Domain.dll
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.Domain\bin\Debug\netstandard2.0\InventoryManagement.Domain.pdb
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.Domain\obj\Debug\netstandard2.0\InventoryManagement.Domain.csprojAssemblyReference.cache
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.Domain\obj\Debug\netstandard2.0\InventoryManagement.Domain.AssemblyInfoInputs.cache
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.Domain\obj\Debug\netstandard2.0\InventoryManagement.Domain.AssemblyInfo.cs
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.Domain\obj\Debug\netstandard2.0\InventoryManagement.Domain.dll
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.Domain\obj\Debug\netstandard2.0\InventoryManagement.Domain.pdb

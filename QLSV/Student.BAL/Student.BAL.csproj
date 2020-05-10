@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Student.BAL.Interface\Student.BAL.Interface.csproj" />
+    <ProjectReference Include="..\Student.DAL.Interface\Student.DAL.Interface.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91957C43-A357-41D1-B639-2C3B2D9E11BB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vaynhanh3s</RootNamespace>
+    <AssemblyName>vaynhanh3s</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.3</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DataTables.AspNet.Core, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DataTables.AspNet.Core.2.0.2\lib\net45\DataTables.AspNet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DataTables.AspNet.Mvc5, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DataTables.AspNet.Mvc5.2.0.2\lib\net45\DataTables.AspNet.Mvc5.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.5.3.2, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.5.3.2\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="LBH.Domain">
+      <HintPath>..\libs\LBH.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
+    <Compile Include="Areas\Admin\Controllers\BannerController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CandidatorController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoansController.cs" />
+    <Compile Include="Areas\Admin\Controllers\_BaseController.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Common\CustomAuthorize.cs" />
+    <Compile Include="Controllers\_BaseController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UploadHandler\FilesStatus.cs" />
+    <Compile Include="UploadHandler\FilesHandler.ashx.cs">
+      <DependentUpon>FilesHandler.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adHomeLTE\css\bootstrap.css" />
+    <Content Include="adHomeLTE\css\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="adHomeLTE\css\grid.css" />
+    <Content Include="adHomeLTE\css\jquery-ui-1.12.1.custom\jquery-ui.css" />
+    <Content Include="adHomeLTE\css\jquery-ui-1.12.1.custom\jquery-ui.js" />
+    <Content Include="adHomeLTE\css\quang.css" />
+    <Content Include="adHomeLTE\css\style.css" />
+    <Content Include="adHomeLTE\images\back_to_top.png" />
+    <Content Include="adHomeLTE\images\ci_view.png" />
+    <Content Include="adHomeLTE\images\cl_popup.png" />
+    <Content Include="adHomeLTE\images\dangky_fixed.png" />
+    <Content Include="adHomeLTE\images\icon\contact-home-icon.png" />
+    <Content Include="adHomeLTE\images\icon\contact-mail-icon.png" />
+    <Content Include="adHomeLTE\images\icon\contact-phone-icon.png" />
+    <Content Include="adHomeLTE\images\icon\contact-tel-icon.png" />
+    <Content Include="adHomeLTE\images\icon\contact-web-icon.png" />
+    <Content Include="adHomeLTE\images\Loading21.gif" />
+    <Content Include="adHomeLTE\images\thongtinkhoanvayfix.png" />
+    <Content Include="adHomeLTE\images\tracuudiembanhang_icon.png" />
+    <Content Include="adHomeLTE\js\bootstrap.min.js" />
+    <Content Include="adHomeLTE\js\ChatBoxWeb.js" />
+    <Content Include="adHomeLTE\js\jquery-3.1.1.js" />
+    <Content Include="adHomeLTE\js\jquery.mousewheel.min.js" />
+    <Content Include="adHomeLTE\js\jquery.validate.js" />
+    <Content Include="adHomeLTE\js\jquery.validate.unobtrusive.min.js" />
+    <Content Include="adHomeLTE\js\maplace.js" />
+    <Content Include="adHomeLTE\js\script.js" />
+    <Content Include="Content\css\admin.css">
+      <DependentUpon>admin.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\css\admin.min.css">
+      <DependentUpon>admin.css</DependentUpon>
+    </Content>
+    <Content Include="Content\images\loading-bar.gif" />
+    <Content Include="Content\images\loading.gif" />
+    <Content Include="Content\images\logo-only.png" />
+    <Content Include="Content\images\noimages.png" />
+    <Content Include="Content\images\pin.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Content\css\admin.scss" />
+    <Content Include="Areas\Admin\Views\Banner\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_FooterPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_HeaderPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_LeftSideMenuPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Account\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Candidator\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Loans\Index.cshtml" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="libs\LBH.Common.Configuration.dll" />
+    <Content Include="libs\LBH.Common.Dapper.dll" />
+    <Content Include="libs\LBH.Common.Extension.dll" />
+    <Content Include="libs\LBH.Common.Log4Net.dll" />
+    <Content Include="libs\LBH.Common.Mapping.dll" />
+    <Content Include="libs\LBH.Common.RestSharp.dll" />
+    <Content Include="libs\LBH.Common.TinyIoc.dll" />
+    <Content Include="libs\LBH.Domain.dll" />
+    <Content Include="libs\log4net.dll" />
+    <Content Include="Scripts\admin\banner\banner.js" />
+    <Content Include="Scripts\admin\candidator\candidator.js" />
+    <Content Include="Scripts\admin\customer\customer.js" />
+    <Content Include="Scripts\admin\loans\loans.js" />
+    <Content Include="Scripts\common\helpers.js" />
+    <Content Include="Scripts\GridPhoto\jquery.grid-a-licious.js" />
+    <Content Include="Scripts\LightGallery\css\lightgallery.css" />
+    <Content Include="Scripts\LightGallery\js\lg-autoplay.js" />
+    <Content Include="Scripts\LightGallery\js\lg-fullscreen.js" />
+    <Content Include="Scripts\LightGallery\js\lg-hash.js" />
+    <Content Include="Scripts\LightGallery\js\lg-pager.js" />
+    <Content Include="Scripts\LightGallery\js\lg-thumbnail.js" />
+    <Content Include="Scripts\LightGallery\js\lg-video.js" />
+    <Content Include="Scripts\LightGallery\js\lg-zoom.js" />
+    <Content Include="Scripts\LightGallery\js\lightgallery.js" />
+    <Content Include="Scripts\MasterSlider\images\blank.png" />
+    <Content Include="Scripts\MasterSlider\jquery.easing.min.js" />
+    <Content Include="Scripts\MasterSlider\masterslider.css" />
+    <Content Include="Scripts\MasterSlider\masterslider.min.js" />
+    <Content Include="Scripts\MasterSlider\style.css" />
+    <Content Include="Scripts\MenuRes\dropdowns.css" />
+    <Content Include="Scripts\MenuRes\dropdowns.js" />
+    <Content Include="Scripts\pagination\pagination.css" />
+    <Content Include="Scripts\shop\account\personal-infomation.js" />
+    <Content Include="Scripts\shop\cart\order-details.js" />
+    <Content Include="Scripts\shop\donthuoc\donthuoc.js" />
+    <Content Include="Scripts\shop\home\cleanViewCart.js" />
+    <Content Include="Scripts\shop\home\home.js" />
+    <Content Include="Scripts\shop\account\change-password.js" />
+    <Content Include="Scripts\shop\account\register.js" />
+    <Content Include="Scripts\shop\cart\tracking.js" />
+    <Content Include="Scripts\shop\cart\cart-details.js" />
+    <Content Include="Scripts\shop\cart\cart.js" />
+    <Content Include="Scripts\shop\category\category.js" />
+    <Content Include="Scripts\shop\product\product.js" />
+    <Content Include="Scripts\site\home.js" />
+    <Content Include="Scripts\swiper\swiper.css" />
+    <Content Include="Scripts\swiper\swiper.min.js" />
+    <Content Include="Uploads\010319_thumb.png" />
+    <Content Include="Uploads\0210.1.jpg" />
+    <Content Include="Uploads\0210.2.jpg" />
+    <Content Include="Uploads\0210.3.jpg" />
+    <Content Include="Uploads\0210.4.jpg" />
+    <Content Include="Uploads\0607.1.jpg" />
+    <Content Include="Uploads\0607.2.jpg" />
+    <Content Include="Uploads\1007.jpg" />
+    <Content Include="Uploads\170818.jpg" />
+    <Content Include="Uploads\171102-Le ky ket ban giao 42.jpg" />
+    <Content Include="Uploads\190718.jpg" />
+    <Content Include="Uploads\1_270.png" />
+    <Content Include="Uploads\2.TEAMBUILDING.2.jpg" />
+    <Content Include="Uploads\20181228_2FB_271x182.jpg" />
+    <Content Include="Uploads\210119.png" />
+    <Content Include="Uploads\271px182p.jpg" />
+    <Content Include="Uploads\271x182.jpg" />
+    <Content Include="Uploads\2808.3.jpg" />
+    <Content Include="Uploads\2808.jpg" />
+    <Content Include="Uploads\2N4A0399.jpg" />
+    <Content Include="Uploads\3.Teambuilding.3.jpg" />
+    <Content Include="Uploads\420.jpg" />
+    <Content Include="Uploads\420_2.jpg" />
+    <Content Include="Uploads\640x427-140219-QLTC1.jpg" />
+    <Content Include="Uploads\640x427-140219-QLTC2.jpg" />
+    <Content Include="Uploads\8.3.1_2.jpg" />
+    <Content Include="Uploads\8.3.2.jpg" />
+    <Content Include="Uploads\8.3.2_2.jpg" />
+    <Content Include="Uploads\8.3.3.jpg" />
+    <Content Include="Uploads\8.3.4.jpg" />
+    <Content Include="Uploads\8.3.4_2.jpg" />
+    <Content Include="Uploads\8.3.5 %281%29.jpg" />
+    <Content Include="Uploads\8.3.5 %281%29_2.jpg" />
+    <Content Include="Uploads\900x900 - logo copy%401x.jpg" />
+    <Content Include="Uploads\Banner 1600px420p.jpg" />
+    <Content Include="Uploads\Banner 271px182p.jpg" />
+    <Content Include="Uploads\Banner24.jpg" />
+    <Content Include="Uploads\Bannersite_52 Tinh- TP-02.jpg" />
+    <Content Include="Uploads\Bannersite_chovaytienmat.jpg" />
+    <Content Include="Uploads\Bannersite_Chovaytragop-02.jpg" />
+    <Content Include="Uploads\bannerslide-CVTM2.jpg" />
+    <Content Include="Uploads\bannerslide.trichno.jpg" />
+    <Content Include="Uploads\base1110.1_2.jpg" />
+    <Content Include="Uploads\base1110.jpg" />
+    <Content Include="Uploads\base1110_2.jpg" />
+    <Content Include="Uploads\bigC.thumb.jpg" />
+    <Content Include="Uploads\Cafe.thumb- 271x182.jpg" />
+    <Content Include="Uploads\chay1.jpg" />
+    <Content Include="Uploads\chay2.jpg" />
+    <Content Include="Uploads\credithistory.jpg" />
+    <Content Include="Uploads\DAT_6055.jpg" />
+    <Content Include="Uploads\DSCF4736_Web01.jpg" />
+    <Content Include="Uploads\DSCF4736_Web01_2.jpg" />
+    <Content Include="Uploads\fav\fav.png" />
+    <Content Include="Uploads\gd2.jpg" />
+    <Content Include="Uploads\gd2_2.jpg" />
+    <Content Include="Uploads\HT36M.1600.png" />
+    <Content Include="Uploads\HT36M.640.png" />
+    <Content Include="Uploads\hue1.jpg" />
+    <Content Include="Uploads\hue2.jpg" />
+    <Content Include="Uploads\hue3.jpg" />
+    <Content Include="Uploads\Hung Phat_web271.png" />
+    <Content Include="Uploads\Hung Phat_web640.png" />
+    <Content Include="Uploads\Icon Web-02.jpg" />
+    <Content Include="Uploads\icon-uudiem\1.png" />
+    <Content Include="Uploads\icon-uudiem\1_hv.png" />
+    <Content Include="Uploads\icon-uudiem\2.png" />
+    <Content Include="Uploads\icon-uudiem\2_hv.png" />
+    <Content Include="Uploads\icon-uudiem\3.png" />
+    <Content Include="Uploads\icon-uudiem\3_hv.png" />
+    <Content Include="Uploads\icon-uudiem\4.png" />
+    <Content Include="Uploads\icon-uudiem\4_hv.png" />
+    <Content Include="Uploads\icon-uudiem\5.png" />
+    <Content Include="Uploads\icon-uudiem\5_hv.png" />
+    <Content Include="Uploads\icon-uudiem\6.png" />
+    <Content Include="Uploads\icon-uudiem\6_hv.png" />
+    <Content Include="Uploads\icon-uudiem\icon-phuong-thuc-thanh-toan-da-dang.png" />
+    <Content Include="Uploads\icon-uudiem\icon-tra-truoc-10.png" />
+    <Content Include="Uploads\icon2.jpg" />
+    <Content Include="Uploads\icon\vay-tien-mat-hover.png" />
+    <Content Include="Uploads\IMG_20181011_101817.jpg" />
+    <Content Include="Uploads\IMG_6168.jpg" />
+    <Content Include="Uploads\KCN-BP_1.jpg" />
+    <Content Include="Uploads\KCN-BP_2.jpg" />
+    <Content Include="Uploads\KCN-BP_3.jpg" />
+    <Content Include="Uploads\Kien Nga_271x182.png" />
+    <Content Include="Uploads\kyketMBAL.1.jpg" />
+    <Content Include="Uploads\kyketMBAL.2.jpg" />
+    <Content Include="Uploads\le-khai-truong.jpg" />
+    <Content Include="Uploads\Logo - CPN.png" />
+    <Content Include="Uploads\Logo - Ecomart.png" />
+    <Content Include="Uploads\Logo - Umbalas2.png" />
+    <Content Include="Uploads\logo Pico.jpg" />
+    <Content Include="Uploads\logo thien hoa.jpg" />
+    <Content Include="Uploads\Logo VietNam Post_resize.jpg" />
+    <Content Include="Uploads\logo.png" />
+    <Content Include="Uploads\logo2016A.png" />
+    <Content Include="Uploads\logo500.png" />
+    <Content Include="Uploads\logoMomo.png" />
+    <Content Include="Uploads\logotrananh-03.jpg" />
+    <Content Include="Uploads\logo_footer.png" />
+    <Content Include="Uploads\Logo_viettel\Logo_Viettel.png" />
+    <Content Include="Uploads\luadaotaichinh.png" />
+    <Content Include="Uploads\lungmam.2.jpg" />
+    <Content Include="Uploads\lungmam_3.jpg" />
+    <Content Include="Uploads\MB ageas life.jpg" />
+    <Content Include="Uploads\Mcredit-465.jpg" />
+    <Content Include="Uploads\Minh Hien_web640_201907.png" />
+    <Content Include="Uploads\momo-640.png" />
+    <Content Include="Uploads\Ms Liên-TVHDTV.jpg" />
+    <Content Include="Uploads\Ms Liên-TVHDTV_2.jpg" />
+    <Content Include="Uploads\muasamTet.1.jpg" />
+    <Content Include="Uploads\Nambinh-271x182.jpg" />
+    <Content Include="Uploads\Nhung Hong_web271.png" />
+    <Content Include="Uploads\Nhung Hong_web640.png" />
+    <Content Include="Uploads\Payoo_logo\pay.png" />
+    <Content Include="Uploads\phone-icon.gif" />
+    <Content Include="Uploads\post1.jpg" />
+    <Content Include="Uploads\post251018.jpg" />
+    <Content Include="Uploads\post260718.jpg" />
+    <Content Include="Uploads\post711.jpg" />
+    <Content Include="Uploads\product\loan-step-1.png" />
+    <Content Include="Uploads\product\loan-step-2.png" />
+    <Content Include="Uploads\product\loan-step-3.png" />
+    <Content Include="Uploads\product\loan-step-4.png" />
+    <Content Include="Uploads\product\loan-step-5.png" />
+    <Content Include="Uploads\quanlyno.jpg" />
+    <Content Include="Uploads\quanlyvayno.jpg" />
+    <Content Include="Uploads\RongVang_1600px420p.jpg" />
+    <Content Include="Uploads\seo.thumb210119.jpg" />
+    <Content Include="Uploads\SEO.thumb211218.png" />
+    <Content Include="Uploads\seo1.thumb.jpg" />
+    <Content Include="Uploads\seo2.thumb.jpg" />
+    <Content Include="Uploads\Shinsei Bank_logo_en_basic_l.jpg" />
+    <Content Include="Uploads\Sinh nhat 23 nam MB_06.jpg" />
+    <Content Include="Uploads\top10.jpg" />
+    <Content Include="Uploads\Van Hung_web640.png" />
+    <Content Include="Uploads\vautiennong.png" />
+    <Content Include="Uploads\vay ngay trung lon_web banner.png" />
+    <Content Include="Uploads\vay ngay trung lon_web post.png" />
+    <Content Include="Uploads\vay ngay trung lon_web thumb.png" />
+    <Content Include="Uploads\Vaydangkikhoahoc_1600x420.png" />
+    <Content Include="Uploads\Vaydangkikhoahoc_271x182.png" />
+    <Content Include="Uploads\Vaydangkikhoahoc_271x182_2.png" />
+    <Content Include="Uploads\Vaydangkikhoahoc_640x427.png" />
+    <Content Include="Uploads\vayhoadon_1600x420.jpg" />
+    <Content Include="Uploads\vayhoadon_271x182.jpg" />
+    <Content Include="Uploads\vayhoadon_640x427.jpg" />
+    <Content Include="Uploads\Web_271x182.png" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="UploadHandler\FilesHandler.ashx" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FTP.pubxml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_FooterPartial.cshtml" />
+    <Content Include="Views\Shared\_HeaderPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_BannerPartial.cshtml" />
+    <Content Include="Uploads\DKDK_HDCVTM_20190814.pdf" />
+    <Content Include="Uploads\Hợp đồng cho vay mua hàng trả góp.3.pdf" />
+    <Content Include="Views\Shared\_LayoutLogin.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="adminLTE\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\_Base\" />
+    <Folder Include="Models\" />
+    <Folder Include="Upload\Images\" />
+    <Folder Include="Views\Base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vaynhanh3s.Contract\vaynhanh3s.Contract.csproj">
+      <Project>{8f3f0059-c632-4ee9-8c26-22bbfa794f0b}</Project>
+      <Name>vaynhanh3s.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vaynhanh3s.DI\vaynhanh3s.DI.csproj">
+      <Project>{e2fc0250-bf3c-4eac-8ea0-45fd7e433155}</Project>
+      <Name>vaynhanh3s.DI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vaynhanh3s.Domain\vaynhanh3s.Domain.csproj">
+      <Project>{bb816696-7665-42da-a429-a2acb29e4a05}</Project>
+      <Name>vaynhanh3s.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vaynhanh3s.Util\vaynhanh3s.Util.csproj">
+      <Project>{e69069b8-d677-483c-911b-7c427670dcbc}</Project>
+      <Name>vaynhanh3s.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60868</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6789/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

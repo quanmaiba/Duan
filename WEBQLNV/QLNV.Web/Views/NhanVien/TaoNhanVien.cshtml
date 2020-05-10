@@ -1,0 +1,75 @@
+﻿@model QLNV.Web.Models.NhanVien.TaoNhanVien
+@using QLNV.Web.Models.NhanVien;
+@{
+    ViewData["Title"] = "TaoNhanVien";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var phongBans = new List<PhongBanItem>();
+    phongBans = ViewBag.PhongBans;
+    int phongBanId = ViewBag.PhongBanId;
+}
+
+<h1>Thêm nhân viên</h1>
+<div>
+    <a class="btn btn-outline-info" asp-controller="NhanVien" asp-action="Index" asp-route-id="@phongBanId">Danh sách nhân viên</a>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="TaoNhanVien" asp-controller="NhanVien" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @if (TempData["ThanhCong"] != null)
+            {
+                <p class="alert alert-success">@TempData["ThanhCong"]</p>
+            }
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Ho" class="control-label"></label>
+                        <input asp-for="Ho" class="form-control" />
+                        <span asp-validation-for="Ho" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Ten" class="control-label"></label>
+                        <input asp-for="Ten" class="form-control" />
+                        <span asp-validation-for="Ten" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DiaChi" class="control-label"></label>
+                        <input asp-for="DiaChi" class="form-control" />
+                        <span asp-validation-for="DiaChi" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="DienThoai" class="control-label"></label>
+                        <input asp-for="DienThoai" class="form-control" />
+                        <span asp-validation-for="DienThoai" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="PhongBanId" class="control-label"></label>
+                        <select asp-for="PhongBanId" class="form-control">
+                            @foreach (var pb in phongBans)
+                            {
+                                <option value="@pb.ID" selected="@(pb.ID == phongBanId)">@pb.TenPhongBan</option>
+                            }
+                        </select>
+                        <span asp-validation-for="PhongBanId" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Thêm nhân viên" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,233 @@
+﻿@using vaynhanh3s.Domain.Response.DieuKienVay
+@using vaynhanh3s.Domain.Response.Banner
+@model List<DieuKienVay>
+
+@{ 
+    var banners = ViewBag.Banners == null ? new List<GetsResult>() : ViewBag.Banners as List<GetsResult>;
+}
+
+<div class="tab-home hide-on-mobile hide-on-mobile">
+    <div class="grid-small" style="max-width:120px">
+        <div class="flex-container flex-space-between">
+            <div class="cell-home-1-4 item-tab-home active hvr-fade" id="tab-1" data-tab="Vay tiền mặt">
+                <div class="c30"></div>
+                <div class="hvr-float item-tab active" data-bg-act="/Uploads/icon/vay-tien-mat-hover.png?width=99&height=98&mode=crop" data-bg="/Uploads/icon/vay-tien.png?width=99&height=98&mode=crop" style="background-image: url('/Uploads/icon/vay-tien-mat-hover.png?width=99&amp;height=98&amp;mode=crop');">
+                    <div class="name">Vay tiền mặt</div>
+                    <div class="c10"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="grid">
+    <div class="c10"></div>
+    <div class="c10 hide-on-mobile"></div>
+    <div class="tab-home-content content-tab-1">
+        <div class="c10"></div>
+
+        <div class="c10"></div>
+
+        <div class="icon-sanpham">
+            <div class="item-uudiem">
+                <div class="benefit-name">
+                    <img class="iconcat" alt="Kh&#244;ng cần thế chấp t&#224;i sản" data-hover="/Uploads/icon-uudiem/1_hv.png?width=48&height=48&mode=crop" data-icon="/Uploads/icon-uudiem/1.png?width=48&height=48&mode=crop" src="Uploads/icon-uudiem/1.png" />
+                    <div class="title-uudiem">Kh&#244;ng cần thế chấp t&#224;i sản</div>
+                </div>
+            </div>
+            <div class="item-uudiem">
+                <div class="benefit-name">
+                    <img class="iconcat" alt="Thủ tục dễ d&#224;ng" data-hover="/Uploads/icon-uudiem/2_hv.png?width=48&height=48&mode=crop" data-icon="/Uploads/icon-uudiem/2.png?width=48&height=48&mode=crop" src="Uploads/icon-uudiem/2.png" />
+                    <div class="title-uudiem">Thủ tục dễ d&#224;ng</div>
+                </div>
+            </div>
+            <div class="item-uudiem">
+                <div class="benefit-name">
+                    <img class="iconcat" alt="Hỗ trợ tận nơi kh&#225;ch y&#234;u cầu" data-hover="/Uploads/icon-uudiem/3_hv.png?width=48&height=48&mode=crop" data-icon="/Uploads/icon-uudiem/3.png?width=48&height=48&mode=crop" src="Uploads/icon-uudiem/3.png" />
+                    <div class="title-uudiem">Hỗ trợ tận nơi kh&#225;ch y&#234;u cầu</div>
+                </div>
+            </div>
+            <div class="item-uudiem">
+                <div class="benefit-name">
+                    <img class="iconcat" alt="Định mức vay cao nhất" data-hover="/Uploads/icon-uudiem/4_hv.png?width=48&height=48&mode=crop" data-icon="/Uploads/icon-uudiem/4.png?width=48&height=48&mode=crop" src="Uploads/icon-uudiem/4.png" />
+                    <div class="title-uudiem">Định mức vay cao nhất</div>
+                </div>
+            </div>
+            <div class="item-uudiem">
+                <div class="benefit-name">
+                    <img class="iconcat" alt="Tư vấn v&#224; l&#224;m thủ tục miễn ph&#237;" data-hover="/Uploads/icon-uudiem/5_hv.png?width=48&height=48&mode=crop" data-icon="/Uploads/icon-uudiem/5.png?width=48&height=48&mode=crop" src="Uploads/icon-uudiem/5.png" />
+                    <div class="title-uudiem">Tư vấn v&#224; l&#224;m thủ tục miễn ph&#237;</div>
+                </div>
+            </div>
+            <div class="item-uudiem">
+                <div class="benefit-name">
+                    <img class="iconcat" alt="Hạn mức trả g&#243;p d&#224;i nhất" data-hover="/Uploads/icon-uudiem/6_hv.png?width=48&height=48&mode=crop" data-icon="/Uploads/icon-uudiem/6.png?width=48&height=48&mode=crop" src="Uploads/icon-uudiem/6.png" />
+                    <div class="title-uudiem">Hạn mức trả g&#243;p d&#224;i nhất</div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="des-uudiem" style="padding-left:15px; padding-bottom:20px; padding-top:20px; text-align:center">
+            <div style="margin-bottom:20px">Hồ sơ vay chỉ cần: Chứng minh nhân dân, Sổ hộ khẩu ... (và các giấy tờ khác tùy vào mức vay, chi tiết gọi hotline)</div>
+            <div class="btn-dangkyngay btnreg w200" style="margin:0 auto !important; clear:both;">
+                <a href="javascript:;" class="hvr-forward" onclick="home.dangKyNgay()">Đăng ký ngay <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".item-uudiem").hover(
+            function () {
+                $(this).find(".iconcat").attr("src", $(this).find(".iconcat").attr("data-hover")).stop(true, true).hide().fadeIn();
+            }, function () {
+                $(this).find(".iconcat").attr("src", $(this).find(".iconcat").attr("data-icon")).stop(true, true).hide().fadeIn();
+            }
+        );
+
+    </script>
+    <div class="bor-3"></div>
+</div>
+
+<div class="c30"></div>
+<div class="grid">
+    <!--- Quy trình cho vay --->
+    <div class="tab-home-content content-tab-1">
+        <div class="c10"></div>
+        <h2 class="quy-trinh-vay">
+            <span>
+                Quy trình cho Vay tiền mặt
+            </span>
+        </h2>
+        <div class="c20"></div>
+        <div class="quy-trinh-cho-vay flex-container flex-space-between">
+
+            <div class="loan-step-1 hvr-buzz-out">
+                <div class="loan-step-img"><img src="Uploads/product/loan-step-1.png" style="width:100%" /></div>
+                <div>Công ty: Tiếp cận và tư vấn khách hàng về nhu cầu vay và lãi suất.</div>
+            </div>
+            <div class="loan-step-2 hvr-buzz-out">
+                <div class="loan-step-img"><img src="Uploads/product/loan-step-2.png" style="width:100%" /></div>
+                <div>Khách hàng: Cung cấp hồ sơ theo yêu cầu của sản phẩm vay.</div>
+            </div>
+            <div class="loan-step-3 hvr-buzz-out">
+                <div class="loan-step-img"><img src="Uploads/product/loan-step-3.png" style="width:100%" /></div>
+                <div>Công ty: Thẩm định hồ sơ khách hàng (trong vòng 2 ngày).</div>
+            </div>
+            <div class="loan-step-4 hvr-buzz-out">
+                <div class="loan-step-img"><img src="Uploads/product/loan-step-4.png" style="width:100%" /></div>
+                <div>Khách hàng: Hoàn tất hồ sơ hợp đồng tín dụng tại điểm giới thiệu dịch vụ của công ty.</div>
+            </div>
+            <div class="loan-step-5 hvr-buzz-out">
+                <div class="loan-step-img"><img src="Uploads/product/loan-step-5.png" style="width:100%" /></div>
+                <div>
+                    Công ty: Hướng dẫn khách hàng nhận tiền mặt.<br />
+                    Nhận qua tài khoản ngân hàng bằng chuyển khoản.
+                </div>
+            </div>
+        </div>
+        <div class="c10"></div>
+    </div>
+    <div>
+        <div class="btn-dangkyngay btnreg w200" style="margin:0 auto !important">
+            <a href="javascript:;" class="hvr-forward" onclick="home.dangKyNgay()">Đăng ký ngay <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="clearfix" style="margin-bottom:20px"></div>
+</div>
+
+<form id="modalDangKyNgay" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="modalDangKyNgayLabel" style="z-index:99999">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="color:#FF581F; text-align:center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modalDangKyNgayLabel">ĐĂNG KÝ NGAY</h4>
+            </div>
+            <div class="modal-body" style="margin-bottom:30px">
+                <div>
+                    Vui lòng điền những thông tin bên dưới để đăng ký khoản vay.<br />
+                    Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.<br />
+                    Bằng việc đăng ký khoản vay, bạn cam kết và đồng ý với: <a href="#">chính sách bảo mật của vaynhanh3s.vn</a>
+                </div>
+                <input id="GRecaptchaResponse" name="GRecaptchaResponse" hidden />
+                <div class="form-group" style="margin-top:30px">
+                    <input type="text" class="form-control" id="HoTen" name="HoTen" placeholder="Họ tên" required data-msg-required="Đây là trường bắt buộc phải nhập">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="SoDienThoai" name="SoDienThoai" placeholder="Số điện thoại liên hệ" maxlength="10" minlength="10" required data-msg-required="Đây là trường bắt buộc phải nhập" data-msg-minlength="Phải nhập đầy đủ 10 số. Ví dụ: 0914051234"  data-msg-maxlength="Phải nhập đầy đủ 10 số. Ví dụ: 0914051234">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control SoCMND" id="SoCMND" name="SoCMND" placeholder="Số chứng minh nhân dân" required data-msg-required="Đây là trường bắt buộc phải nhập" data-msg-number="Số chứng minh nhân dân không đúng dịnh dạng">
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="TinhThanhId" name="TinhThanhId" style="width:100%" required data-msg-required="Đây là trường bắt buộc phải nhập">
+                        <option value="">Chọn tỉnh/Thành phố</option>
+                        <option value="46">Huế</option>
+                        <option value="48">Đà Nẵng</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="cmnd">Chọn điều kiện vay:</label>
+                    @{
+                        if (Model != null && Model.Any())
+                        {
+                            <ul style="list-style:none; padding:0">
+                                @foreach (var m in Model)
+                                {
+                                    <li>
+                                        <label style="font-weight:normal"><input type="radio" name="DieuKienVayId" value="@m.Id" required data-msg-required="Đây là trường bắt buộc phải nhập"/> @m.Ten</label>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                    }
+
+                </div>
+
+                <div class="btn-dangkyngay btnreg w200" style="margin:0 auto !important">
+                    <a href="javascript:;" class="hvr-forward" onclick="home.yeuCauVay()">Gửi yêu cầu <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<form id="modalTuyenDung" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="modalTuyenDungLabel" style="z-index:99999">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header mbc-modal-header" style="color:#FF581F; text-align:center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modalTuyenDungLabel">ĐĂNG KÝ ỨNG TUYỂN</h4>
+            </div>
+            <div class="modal-body" style="margin-bottom:30px">
+                <input id="GRecaptchaResponse" name="GRecaptchaResponse" hidden />
+                <div class="form-group">
+                    <input type="text" class="form-control" id="ut_HoTen" name="HoTen" placeholder="Họ tên" required data-msg-required="Đây là trường bắt buộc phải nhập">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="ut_SoDienThoai" name="SoDienThoai" placeholder="Số điện thoại liên hệ" maxlength="10" minlength="10" required data-msg-required="Đây là trường bắt buộc phải nhập" data-msg-minlength="Phải nhập đầy đủ 10 số. Ví dụ: 0914051234"  data-msg-maxlength="Phải nhập đầy đủ 10 số. Ví dụ: 0914051234">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control SoCMND" id="ut_SoCMND" name="SoCMND" placeholder="Số chứng minh nhân dân" required data-msg-required="Đây là trường bắt buộc phải nhập" data-msg-number="Số chứng minh nhân dân không đúng dịnh dạng">
+                </div>
+                <div class="form-group">
+                    <select class="form-control" style="width:100%" name="TinhThanhId" id="ut_TinhThanhId" required data-msg-required="Đây là trường bắt buộc phải nhập">
+                        <option value="0">Chọn tỉnh/Thành phố</option>
+                        <option value="46" selected>Huế</option>
+                        <option value="48">Đà Nẵng</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="ViTriId">Chọn vị trí ứng tuyển:</label>
+                    <select class="form-control" style="width:100%" name="ViTriId" id="ut_ViTriId" required data-msg-required="Đây là trường bắt buộc phải nhập">
+                        <option value="">Chọn vị trí ứng tuyển</option>
+                        <option value="1">Nhân viên kinh doanh</option>
+                        <option value="2">Giám sát phát triển kinh doanh</option>
+                    </select>
+                </div>
+
+                <div class="btn-dangkyngay btnreg w200" style="margin:0 auto !important">
+                    <a href="javascript:;" class="hvr-forward" onclick="home.ungTuyen()">Gửi yêu cầu <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

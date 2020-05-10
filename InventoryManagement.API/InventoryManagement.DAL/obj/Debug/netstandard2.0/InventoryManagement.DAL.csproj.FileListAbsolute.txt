@@ -1,0 +1,13 @@
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.DAL\bin\Debug\netstandard2.0\InventoryManagement.DAL.deps.json
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.DAL\bin\Debug\netstandard2.0\InventoryManagement.DAL.dll
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.DAL\bin\Debug\netstandard2.0\InventoryManagement.DAL.pdb
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.DAL\bin\Debug\netstandard2.0\InventoryManagement.DAL.Interface.dll
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.DAL\bin\Debug\netstandard2.0\InventoryManagement.Domain.dll
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.DAL\bin\Debug\netstandard2.0\InventoryManagement.DAL.Interface.pdb
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.DAL\bin\Debug\netstandard2.0\InventoryManagement.Domain.pdb
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.DAL\obj\Debug\netstandard2.0\InventoryManagement.DAL.AssemblyInfoInputs.cache
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.DAL\obj\Debug\netstandard2.0\InventoryManagement.DAL.AssemblyInfo.cs
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.DAL\obj\Debug\netstandard2.0\InventoryManagement.DAL.csproj.CopyComplete
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.DAL\obj\Debug\netstandard2.0\InventoryManagement.DAL.dll
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.DAL\obj\Debug\netstandard2.0\InventoryManagement.DAL.pdb
+E:\Angular\API\InventoryManagement\InventoryManagement.API\InventoryManagement.DAL\obj\Debug\netstandard2.0\InventoryManagement.DAL.csprojAssemblyReference.cache

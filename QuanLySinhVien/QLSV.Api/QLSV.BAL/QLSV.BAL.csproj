@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QLSV.BAL Interface\QLSV.BAL Interface.csproj" />
+    <ProjectReference Include="..\QLSV.DAL Interface\QLSV.DAL Interface.csproj" />
+  </ItemGroup>
+
+</Project>

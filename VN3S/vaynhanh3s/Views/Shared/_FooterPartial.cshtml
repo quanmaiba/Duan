@@ -1,0 +1,72 @@
+﻿@using vaynhanh3s.Util
+
+<div class="copyright">
+    <div class="grid hide-on-mobile hide-on-pad" style="padding:30px 100px">
+        <div class="cell-1-2" style="text-align:left;">
+            <a href="javascript:;" onclick="home.scrollTop()">
+                <img alt="" src="Uploads/logo.png" width="250" />
+            </a>
+            <div>
+                <h3>PHÒNG DỊCH VỤ KHÁCH HÀNG</h3>
+                <p>
+                    Trực tiếp tiếp nhận, giải đáp mọi thắc mắc của khách hàng<br />
+                    Thứ 2 - Thứ 6 (08h30-11h30, 13h30-16h30)
+                </p>
+                @if (bool.Parse(vaynhanh3sConfig.AllowDisplay))
+                {
+                    <p>
+                        <a href="tel:@vaynhanh3sConfig.Support1"><i class="fa fa-phone" style="font-size:17pt; margin-right:5px"></i> @vaynhanh3sConfig.Support1</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:@vaynhanh3sConfig.Support2"><i class="fa fa-phone" style="font-size:17pt; margin-right:5px"></i> @vaynhanh3sConfig.Support2</a>
+                    </p>
+                }
+            </div>
+        </div>
+        <div class="cell-1-2">
+            @if (bool.Parse(vaynhanh3sConfig.AllowDisplay))
+            {
+                <div>
+                    <h3>MUỐN VAY NHANH NHẤT, HÃY GỌI SỐ:</h3>
+
+                    <p>
+                        <a style="font-size:17pt;" href="tel:@vaynhanh3sConfig.VayNhanh" style="color:#F35F0B"><img src="~/Uploads/phone-icon.gif" style="width:80px" /> @vaynhanh3sConfig.VayNhanh</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                </div>
+            }
+        </div>
+
+    </div>
+    <div class="grid hide-on-pc">
+        <div style="text-align:center">
+            <a href="javascript:;" onclick="home.scrollTop()">
+                <img alt="" src="Uploads/logo.png" width="250" />
+            </a>
+            <div>
+                <h3>PHÒNG DỊCH VỤ KHÁCH HÀNG</h3>
+                <p>
+                    Trực tiếp tiếp nhận, giải đáp mọi thắc mắc của khách hàng<br />
+                    Thứ 2 - Thứ 6 (08h30-11h30, 13h30-16h30)
+                </p>
+                @if (bool.Parse(vaynhanh3sConfig.AllowDisplay))
+                {
+                    <p>
+                        <a href="tel:@vaynhanh3sConfig.Support1" style="color:#fff"><i class="fa fa-phone" style="font-size:17pt; margin-right:5px"></i> @vaynhanh3sConfig.Support1</a><br />
+                        <a href="tel:@vaynhanh3sConfig.Support2" style="color:#fff"><i class="fa fa-phone" style="font-size:17pt; margin-right:5px"></i> @vaynhanh3sConfig.Support2</a>
+                    </p>
+                }
+            </div>
+            <div>
+                @if (bool.Parse(vaynhanh3sConfig.AllowDisplay))
+                {
+                    <h3 style="color:#b10000">MUỐN VAY NHANH NHẤT, HÃY GỌI SỐ</h3>
+                    <p>
+                        <a href="tel:@vaynhanh3sConfig.VayNhanh" style="color:#b10000">@vaynhanh3sConfig.VayNhanh</a>
+                    </p>
+                }
+                else
+                {
+                    <p></p>
+                }
+            </div>
+        </div>
+    </div>
+</div>

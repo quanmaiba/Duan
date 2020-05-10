@@ -1,0 +1,99 @@
+﻿@using vaynhanh3s.Util
+
+<div class="top-page hide-on-mobile hide-on-pad">
+    <div class="grid">
+        <div class="flex-container flex-space-between">
+            <div class="cell-2-3 pad-cell-1-1 mobile-cell-1-1">
+                <div class="name-com">DỄ DÀNG, NHANH CHÓNG - CẦN VAY, CÓ NGAY - UY TÍN, BẢO MẬT - KHÔNG THẾ CHẤP</div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="cell-1-3 pad-cell-1-1 mobile-cell-1-1">
+                <div class="hotline-top">
+                    <b style="font-size:18px"><i><span style="color:#41B249">VAY</span><span style="color:#0357A7">NHANH</span><span style="color:#F36430">3S</span><span style="color:#0357A7">.VN</span></i></b> <span style="color:red">NÓI KHÔNG VỚI TÍN DỤNG ĐEN</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hide-on-pc">
+    <div style="text-align:center; padding:10px 10px 10px 10px ">
+        <a href="javascript:;"  onclick="home.scrollTop()">
+            <img alt="" src="Uploads/logo.png" width="250" />
+        </a>
+    </div>
+    <div class="top-page" style="height:100px">
+        <div class="flex-container flex-space-between">
+            <div class="pad-cell-1-1 mobile-cell-1-1" style="text-align:center; padding:10px">
+                DỄ DÀNG, NHANH CHÓNG - CẦN VAY, CÓ NGAY<br />
+                UY TÍN, BẢO MẬT - KHÔNG THẾ CHẤP
+                <div style="margin-top:10px">
+                    <b style="font-size:18px"><i><span style="color:#41B249">VAY</span><span style="color:#0357A7">NHANH</span><span style="color:#F36430">3S</span><span style="color:#0357A7">.VN</span></i></b> <span style="color:red">NÓI KHÔNG VỚI TÍN DỤNG ĐEN</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <ul class="nav show-on-mobile show-on-pad" style="float:left">
+            <li>
+                <a href="javascript:;"><i class="icon-home"></i></a>
+            </li>
+            <li>
+                <a onclick="home.vayTienMat()">VAY TIỀN MẶT</a>
+            </li>
+            <li>
+                <a onclick="home.tuyenDung()">Tuyển dụng</a>
+            </li>
+        </ul>
+        <div class="btn-dangkyngay btnreg w200 fr">
+            <a href="javascript:;" style="font-weight:normal" class="hvr-forward" onclick="home.dangKyNgay()">Đăng ký ngay <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div style="font-weight:bold; text-align:center; margin-bottom:20px">
+        @if (bool.Parse(vaynhanh3sConfig.AllowDisplay))
+        {
+            <span style="color:#F36430">Hotline:</span> <a style="color:#0357A7" href="tel:@vaynhanh3sConfig.Hotline">@vaynhanh3sConfig.Hotline</a>
+        }
+    </div>
+</div>
+
+<div class="header pos-re hide-on-mobile hide-on-pad">
+    <div class="grid">
+        <div class="logo">
+            <div id="">
+                <a href="javascript:;"  onclick="home.scrollTop()">
+                    <img alt="" src="Uploads/logo.png" />
+                </a>
+            </div>
+        </div>
+        <div class="">
+            <div class="btn-dangkyngay btnreg w300 fr" style="background:none #fff; font-weight:bold">
+                @if (bool.Parse(vaynhanh3sConfig.AllowDisplay))
+                {
+                    <span style="color:#F36430">Hotline:</span> <a style="color:#0357A7" href="tel:@vaynhanh3sConfig.Hotline">@vaynhanh3sConfig.Hotline</a>
+                }
+            </div>
+
+            <div class="btn-dangkyngay btnreg w200 fr">
+                <a href="javascript:;" class="hvr-forward" onclick="home.dangKyNgay()">Đăng ký ngay <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+
+            <ul class="nav">
+                <li>
+                    <a href="javascript:;"><i class="icon-home"></i></a>
+                </li>
+                <li>
+                    <a onclick="home.vayTienMat()">VAY TIỀN MẶT</a>
+                </li>
+                <li>
+                    <a onclick="home.tuyenDung()">Tuyển dụng</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<div class="clearfix"></div>

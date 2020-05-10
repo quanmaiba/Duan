@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.PageTitle = "Quản lý khách hàng";
+    ViewBag.PageDesc = "";
+}
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box box-success">
+            <div class="box-header">
+                <h3 class="box-title">Danh sách khác hàng</h3>
+                <div class="row text-right">
+                   
+                    <div class="col-md-12">
+                        <button class="btn btn-blocks btn-primary pull-right" onclick="customer.xuatExcel(null)">
+                            <i class="fa fa-file-excel-o"></i> Xuất ra excel
+                        </button>
+                        <button class="btn btn-blocks btn-primary pull-right" onclick="customer.xuatExcel(false)" style="margin-right:10px">
+                            <i class="fa fa-file-excel-o"></i> Chỉ xuất khách hàng mới
+                        </button>
+                        <input style="width:180px; float:right; margin-right:10px" id="daterange" class="form-control pull-right" placeholder="Lọc theo ngày" />
+                    </div>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="table-responsive">
+                    <table id="customerDatatable" class="table table-bordered table-hover dataTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section css{
+    <link href="~/adminLTE/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+}
+
+@section scripts
+{
+    <script src="@Url.Content("~/adminLTE/bower_components/datatables.net/js/jquery.dataTables.min.js")"></script>
+    <script src="@Url.Content("~/adminLTE/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js")"></script>
+
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/vendor/jquery.ui.widget.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/vendor/load-image.min.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/vendor/canvas-to-blob.min.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/vendor/jquery.blueimp-gallery.min.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.iframe-transport.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.fileupload.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.fileupload-process.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.fileupload-image.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.fileupload-validate.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.fileupload-ui.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/cors/jquery.xdr-transport.js")"></script>
+
+
+    <script src="~/Scripts/admin/customer/customer.js"></script>
+}

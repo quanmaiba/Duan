@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.PageTitle = "Quản lý banner";
+    ViewBag.PageDesc = "";
+    ViewBag.PageTitle = "Quản lý banner";
+}
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box box-success">
+            <div class="box-header">
+                <h3 class="box-title">Danh sách banner</h3>
+                <p class="pull-right">
+                    <button class="btn btn-blocks btn-primary" onclick="banner.showAddModel()">
+                        <i class="fa fa-plus"></i> Thêm mới
+                    </button>
+                </p>
+            </div>
+            <div class="box-body">
+                <div class="table-responsive">
+                    <table id="bannerDatatable" class="table table-bordered table-hover dataTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addEditModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form class="form-horizontal" id="addEditForm">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Thêm mới banner</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="box-body">
+                        <input type="hidden" id="hiddenId" name="Id" value="0">
+                        <div class="form-group">
+                            <label for="Name" class="col-sm-2 control-label">Mô tả</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="Description" name="Description" placeholder="Mô tả banner">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="URL" class="col-sm-2 control-label">Ảnh</label>
+
+                            <div class="col-sm-10">
+                                <div class="row upload-section">
+                                    <div class="col-md-4">
+                                        <input id="URLUploader" type="file" data-url="/UploadHandler/FilesHandler.ashx" method="POST" enctype="multipart/form-data" />
+                                    </div>
+                                    <div class="col-md-7">
+                                        <img src="~/Content/images/loading-bar.gif" class="inline-loading" style="display:none" />
+                                    </div>
+                                </div>
+                                <image id="URLPreview" style="max-width:100px" />
+                                <input type="hidden" name="URL" id="URL" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary" onclick="banner.Save()">Lưu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section css{
+    <link href="~/adminLTE/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+}
+
+@section scripts
+{
+    <script src="@Url.Content("~/adminLTE/bower_components/datatables.net/js/jquery.dataTables.min.js")"></script>
+    <script src="@Url.Content("~/adminLTE/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js")"></script>
+
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/vendor/jquery.ui.widget.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/vendor/load-image.min.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/vendor/canvas-to-blob.min.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/vendor/jquery.blueimp-gallery.min.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.iframe-transport.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.fileupload.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.fileupload-process.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.fileupload-image.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.fileupload-validate.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.fileupload-ui.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/cors/jquery.xdr-transport.js")"></script>
+
+
+    <script src="~/Scripts/admin/banner/banner.js"></script>
+}

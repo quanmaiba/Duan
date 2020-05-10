@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB816696-7665-42DA-A429-A2ACB29E4A05}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vaynhanh3s.Domain</RootNamespace>
+    <AssemblyName>vaynhanh3s.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FCEnum\StatusEnum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request\Account\DangNhapRequest.cs" />
+    <Compile Include="Request\Banner\AddUpdateRequest.cs" />
+    <Compile Include="Request\Banner\GetRequest.cs" />
+    <Compile Include="Request\Banner\GetsRequest.cs" />
+    <Compile Include="Request\Base\IdRequest.cs" />
+    <Compile Include="Request\Base\NullRequest.cs" />
+    <Compile Include="Request\Candidator\CandidatorRegister.cs" />
+    <Compile Include="Request\Candidator\GetCandidators.cs" />
+    <Compile Include="Request\Candidator\SpCandidatorRegister.cs" />
+    <Compile Include="Request\Customer\CustomerRegister.cs" />
+    <Compile Include="Request\Customer\GetCustomers.cs" />
+    <Compile Include="Request\Customer\SpCustomerRegister.cs" />
+    <Compile Include="Request\DieuKienVay\DieuKienVaySaveRequest.cs" />
+    <Compile Include="Request\DieuKienVay\GetDieuKienVay.cs" />
+    <Compile Include="Request\DieuKienVay\KichHoatDieuKienVayRequest.cs" />
+    <Compile Include="Request\DieuKienVay\ThemDieuKienVayRequest.cs" />
+    <Compile Include="Request\DieuKienVay\XoaDieuKienVayRequest.cs" />
+    <Compile Include="Request\Email\SendEmailRequest.cs" />
+    <Compile Include="Response\Banner\AddUpdateResult.cs" />
+    <Compile Include="Response\Banner\GetResult.cs" />
+    <Compile Include="Response\Banner\GetsResult.cs" />
+    <Compile Include="Response\BaseResponse.cs" />
+    <Compile Include="Response\Base\IdTextResponse.cs" />
+    <Compile Include="Response\Candidator\Candidator.cs" />
+    <Compile Include="Response\Candidator\CandidatorRegisterResult.cs" />
+    <Compile Include="Response\Customer\Customer.cs" />
+    <Compile Include="Response\Customer\CustomerRegisterResult.cs" />
+    <Compile Include="Response\DieuKienVay\DieuKienVay.cs" />
+    <Compile Include="Response\DieuKienVay\DieuKienVaySaveResult.cs" />
+    <Compile Include="Response\DieuKienVay\KichHoatDieuKienVayResult.cs" />
+    <Compile Include="Response\DieuKienVay\XoaDieuKienVayResult.cs" />
+    <Compile Include="Response\ReCaptcha\ReCaptcha.cs" />
+    <Compile Include="Utilities\Common.cs" />
+    <Compile Include="Utilities\Constants.cs" />
+    <Compile Include="Utilities\Hash.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\log4net.fakes" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

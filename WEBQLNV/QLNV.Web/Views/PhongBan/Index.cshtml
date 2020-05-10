@@ -1,0 +1,50 @@
+﻿@model IEnumerable<QLNV.Web.Models.PhongBan.PhongBanView>
+
+@{
+    ViewData["Title"] = "Phòng ban";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Phòng ban</h1>
+
+<p>
+    <a class="btn btn-outline-primary" asp-controller="PhongBan" asp-action="TaoPhongBan">Tạo Phòng ban</a>
+</p>
+<table class="table table-striped table-bordered table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MaPhongBan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenPhongBan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TongSoNhanVien)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaPhongBan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenPhongBan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TongSoNhanVien)
+            </td>
+            <td>
+                @Html.ActionLink("Sửa", "SuaPhongBan", "PhongBan", new { id=item.ID }, new { @class = "btn btn-warning" })
+                @Html.ActionLink("Nhân viên", "Index", "NhanVien", new { id=item.ID }, new { @class = "btn btn-success" })
+                @Html.ActionLink("Xóa", "XoaPhongBan", "PhongBan", 
+                                    new { id=item.ID }, 
+                                    new { @class = "btn btn-danger", onclick = "return confirm('Bạn có muốn xóa phòng ban này không?')" })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

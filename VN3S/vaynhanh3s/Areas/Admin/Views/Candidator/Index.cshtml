@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.PageTitle = "Quản lý ứng cử viên";
+    ViewBag.PageTitle = "Quản lý ứng cử viên";
+}
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box box-success">
+            <div class="box-header">
+                <h3 class="box-title">Danh sách ứng cử viên</h3>
+                <p class="pull-right">
+                    <button class="btn btn-blocks btn-primary" onclick="candidator.showAddModel()">
+                        <i class="fa fa-plus"></i> Xuất ra excel
+                    </button>
+                </p>
+            </div>
+            <div class="box-body">
+                <div class="table-responsive">
+                    <table id="candidatorDatatable" class="table table-bordered table-hover dataTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section css{
+    <link href="~/adminLTE/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+}
+
+@section scripts
+{
+    <script src="@Url.Content("~/adminLTE/bower_components/datatables.net/js/jquery.dataTables.min.js")"></script>
+    <script src="@Url.Content("~/adminLTE/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js")"></script>
+
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/vendor/jquery.ui.widget.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/vendor/load-image.min.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/vendor/canvas-to-blob.min.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/vendor/jquery.blueimp-gallery.min.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.iframe-transport.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.fileupload.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.fileupload-process.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.fileupload-image.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.fileupload-validate.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/jquery.fileupload-ui.js")"></script>
+    <script src="@Url.Content("~/adminLTE/plugins/ajax-upload/js/cors/jquery.xdr-transport.js")"></script>
+
+
+    <script src="~/Scripts/admin/candidator/candidator.js"></script>
+}

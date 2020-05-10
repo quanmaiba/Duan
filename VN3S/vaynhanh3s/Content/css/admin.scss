@@ -1,0 +1,164 @@
+﻿body {
+
+
+    .swiper-container {
+    }
+
+    .banner-text {
+        padding: 40% 0 15% 0;
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 2px 2px 2px #808080;
+    }
+
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%
+    }
+
+    .embed-container iframe, .embed-container object, .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+    }
+
+    .reg-image {
+        max-height: 235px;
+    }
+
+    .poiter {
+        cursor: pointer !important;
+    }
+
+    .dataTable {
+        width: 100% !important
+    }
+
+    .error {
+        color: orangered;
+    }
+
+    .loading {
+        z-index: 99999;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        background-image: url("/Content/images/loading.gif");
+        background-position: center;
+        background-repeat: no-repeat;
+        position: fixed;
+        overflow: visible;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: none;
+    }
+
+    .vertical-center {
+        vertical-align: middle !important;
+    }
+
+    .bootstrap-dialog {
+        z-index: 9999 !important;
+    }
+    /**
+ * @file
+ * Columns with automatic width, similar to .col-xs-1 and friends.
+ */
+    .col-xs-auto, .col-xs1-auto, .col-sm-auto, .col-md-auto, .col-lg-auto,
+    .col-xs-auto-right, .col-xs1-auto-right, .col-sm-auto-right, .col-md-auto-right, .col-lg-auto-right,
+    .col-middle {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .col-middle {
+        display: table;
+    }
+
+    .col-xs-auto {
+        float: left;
+    }
+
+    .col-xs-auto-right {
+        float: right;
+    }
+
+    @media (min-width: 320px) {
+
+        .banner-text {
+            font-size: 1.5em;
+            text-shadow: 1px 1px 1px #000;
+        }
+    }
+
+    @media (min-width: 480px) {
+        .col-xs1-auto {
+            float: left;
+        }
+
+        .banner-text {
+            font-size: 2em;
+            line-height: 25px;
+            text-shadow: 1px 1px 1px #000;
+        }
+
+        .col-xs1-auto-right {
+            float: right;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .banner-text {
+            font-size: 3.5em;
+            line-height: 60px;
+            text-shadow: 1px 1px 1px #000;
+        }
+
+        .col-sm-auto {
+            float: left;
+        }
+
+        .col-sm-auto-right {
+            float: right;
+        }
+    }
+
+    @media (min-width: 823px) {
+
+        .banner-text {
+            line-height: 35px;
+            font-size: 2em;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .col-md-auto {
+            float: left;
+        }
+
+        .col-md-auto-right {
+            float: right;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .col-lg-auto {
+            float: left;
+        }
+
+        .col-lg-auto-right {
+            float: right;
+        }
+    }
+}

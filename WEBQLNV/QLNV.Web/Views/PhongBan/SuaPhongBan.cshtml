@@ -1,0 +1,45 @@
+﻿@model QLNV.Web.Models.PhongBan.SuaPhongBan
+
+@{
+    ViewData["Title"] = "SuaPhongBan";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Sửa Phòng ban</h1>
+<div>
+    <a class="btn btn-primary" asp-controller="PhongBan" asp-action="Index">Danh sách Phòng bàn</a>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="SuaPhongBan" asp-controller="PhongBan" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @if (TempData["ThanhCong"] != null)
+            {
+                <p class="alert alert-success">@TempData["ThanhCong"]</p>
+            }
+            @if (TempData["Loi"] != null)
+            {
+                <p class="alert alert-danger">@TempData["Loi"]</p>
+            }
+            <div class="form-group">
+                <label asp-for="MaPhongBan" class="control-label"></label>
+                <input asp-for="MaPhongBan" class="form-control" />
+                <span asp-validation-for="MaPhongBan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenPhongBan" class="control-label"></label>
+                <input asp-for="TenPhongBan" class="form-control" />
+                <span asp-validation-for="TenPhongBan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Cập nhật" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

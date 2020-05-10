@@ -1,0 +1,1601 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.grid-small
+{
+    max-width:700px;
+    margin: 0 auto;
+
+}
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.grid-pad {
+    padding-top: 0px;
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+.flex-container {
+	padding: 0;
+	margin: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	display: box;
+	display: flexbox;
+	flex: 1 100%;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.flex-container-round {
+	justify-content:space-around;
+}
+.flex-space-between {
+	justify-content:space-between;
+}
+.flex-container-center {
+	justify-content:center;
+}
+.flex-container-flex-end {
+	justify-content:flex-end;
+}
+[class*='cell-'] {
+  float:left;
+}
+.cell-1-2{
+	width:48%;	
+}
+.cell-1-3{
+	width:32.33%;	
+}
+.cell-2-3{
+	width:65.66%;	
+}
+.cell-1-4{
+	width:24%;	
+}
+.cell-3-4{
+	width:74%;	
+}
+.cell-1-5{
+	width:19%;	
+}
+.cell-2-5{
+	width:39%;	
+}
+.cell-3-5{
+	width:59%;	
+}
+.cell-3-5{
+	width:79%;	
+}
+
+.cell-3-12{
+	width:25%;	
+}
+
+.cell-tools-box-1-6{
+	width:16.3%;
+	background:#6dc138;
+	padding:10px;	
+}
+.cell-footer-left{
+	width:44%;
+}
+.cell-footer-right{
+	width:54%;
+}
+
+.c,.c5,.c10,.c15,.c20,.c25,.c30,.c35,.c40,.c45,.c50{
+	clear:both;	
+}
+.c5{
+	height:5px;	
+}
+.c10{
+	height:10px;	
+}
+.c15{
+	height:15px;	
+}
+.c20{
+	height:20px;	
+}
+.c30{
+	height:30px;	
+}
+.c35{
+	height:35px;	
+}
+.c40{
+	height:40px;	
+}
+.c45{
+	height:45px;	
+}
+.c50{
+	height:50px;	
+}
+.pc-m-b-20{
+	margin-bottom:20px;	
+}
+.pc-p-b-20{
+	padding-bottom:20px;	
+}
+.pc-p-b-10{
+	padding-bottom:10px;	
+}
+.hide-on-pc{
+	display:none;	
+}
+.show-on-pc{
+	display:block;	
+}
+
+
+.bottom-20{
+    margin-bottom:20px;
+}
+.bottom-30{
+    margin-bottom:30px;
+}
+.bottom-40{
+    margin-bottom:40px;
+}
+
+
+
+.cell-news-1-3{
+    width:30.5%;
+
+}
+
+.cell-home-1-3{
+	width:33%;	
+}
+
+.cell-home-1-4{
+	width:25%;	
+}
+
+
+.cell-1-12{
+    width:8.33%;
+}
+
+.cell-5-12{
+    width:41.66%;
+}
+
+.cell-6-12{
+    width:50%;
+}
+
+.cell-7-12{
+    width:58.33%;
+}
+
+
+.cell-product-1-3{
+	width:30.3%;	
+}
+
+.cell-product-1-4{
+	width:24%;	
+}
+
+.cell-product-1-5{
+	width:16%;	
+}
+
+.cell-product-1-2 {
+    width:49%;
+}
+
+.cell-product-tool-title, .cell-product-tool{
+    width:30%;
+}
+
+.cell-job-left {
+    width:25%;
+
+}
+.cell-job-right{
+    width:74%;
+}
+
+.cell-job-form-1-2{
+    width:48%;
+}
+.cell-job-form-1-1{
+    width:100%;
+}
+
+
+.cell-input-1-3{
+	width:31.5%;	
+}
+.cell-input-1-2{
+	width:48%;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media handheld, only screen and (max-width: 1210px) {
+	.grid {
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.hide-on-pc{
+		display:none;	
+	}
+	.show-on-pc{
+		display:block;	
+	}
+}
+@media handheld, only screen and (max-width: 1199px) {
+    .nav li a
+    {
+        padding-left:10px;
+        padding-right:10px;
+
+    }
+    .w200
+    {
+        width:150px;
+    }
+    .prev-news-home
+    {
+        right:10px;
+
+    }
+    .next-news-home
+    {
+        left:10px;
+    }
+    .button-prev-cus
+    {
+         right:10px;
+    }
+    .button-next-cus
+    {
+        left:10px;
+    }
+}
+@media handheld, only screen and (max-width: 1100px) {/*l-pad (pad ngang)*/
+	.grid {
+		padding-left:10px;
+		padding-right:10px;
+	}
+    .nav li a
+    {
+        padding-left:7px;
+        padding-right:7px;
+
+    }
+	.l-pad-cell-1-1{
+		width:100%;	
+	}
+	.l-pad-cell-1-2{
+		width:49%;	
+	}
+	.l-pad-cell-1-3{
+		width:32.33%;	
+	}
+	.l-pad-cell-2-3{
+		width:65.66%;	
+	}
+	.l-pad-cell-1-4{
+		width:24%;	
+	}
+	.l-pad-cell-3-4{
+		width:74%;	
+	}
+	.l-pad-cell-1-5{
+		width:19%;	
+	}
+	.l-pad-cell-2-5{
+		width:39%;	
+	}
+	.l-pad-cell-3-5{
+		width:59%;	
+	}
+	.l-pad-cell-3-5{
+		width:79%;	
+	}
+	.l-pad-m-b-20{
+		margin-bottom:20px;	
+	}
+	.l-pad-p-b-20{
+		padding-bottom:20px;	
+	}
+	.hide-on-l-pad{
+		display:none;	
+	}
+	.show-on-l-pad{
+		display:block;	
+	}
+	
+}
+@media handheld, only screen and (max-width: 999px) { 
+    .dropdowns
+    {
+        display:block !important;
+    }
+    .nav
+    {
+        display:none;
+    }
+    .nav-mobile
+    {
+        display:block;
+        float:right;
+        margin-left:10px;
+
+    }
+    .subMenuPage
+    {
+        display:block;
+    }
+    
+}
+@media handheld, only screen and (max-width: 967px) { /*pad pad doc*/
+	.grid {
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.pad-cell-1-1{
+		width:100%;	
+	}
+	.pad-cell-1-2{
+		width:49%;	
+	}
+	.pad-cell-1-3{
+		width:32.33%;	
+	}
+	.pad-cell-2-3{
+		width:65.66%;	
+	}
+	.pad-cell-1-4{
+		width:24%;	
+	}
+	.pad-cell-3-4{
+		width:74%;	
+	}
+	.pad-cell-1-5{
+		width:19%;	
+	}
+	.pad-cell-2-5{
+		width:39%;	
+	}
+	.pad-cell-3-5{
+		width:59%;	
+	}
+	.pad-cell-3-5{
+		width:79%;	
+	}
+	.pad-m-b-20{
+		margin-bottom:20px;	
+	}
+	.pad-p-b-20{
+		padding-bottom:20px;	
+	}
+	
+	
+	.hide-on-pad{
+		display:none;	
+	}
+    .hide-on-pc{
+        display: none; 
+    } 	
+	
+	.show-on-pad{
+		display:block;	
+	}
+    .box-border
+    {
+        margin-bottom:40px
+
+    }
+    .icon-map-bot
+    {
+        margin-bottom:10px;
+    }
+    .mr40
+    {
+        margin-bottom:30px;
+
+    }
+    .footer
+    {
+        padding-bottom:0;
+    }
+    .box-search-map
+    {
+        margin-top:10px;
+
+    }
+     .ungdung
+        {
+            float:none;
+            margin-top:10px;
+        }
+        .smo-footer
+        {
+            float:none;
+            margin-top:10px;
+
+        }
+        
+        .item-why
+        {
+            margin-bottom:15px;
+        }
+
+}
+@media handheld, only screen and (max-width: 900px) { /* tab */
+    .print-pane{
+
+    }
+    .item-btn-tracuu-khoanvay
+    {
+        padding-top:15px !important;
+    }
+    .print-pane img{
+        max-width:100% !important;
+        height:auto !important
+    }
+	.grid {
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.tab-cell-1-1{
+		width:100%;	
+	}
+	.tab-cell-1-2{
+		width:49%;	
+	}
+	.tab-cell-1-3{
+		width:32.33%;	
+	}
+	.tab-cell-2-3{
+		width:65.66%;	
+	}
+	.tab-cell-1-4{
+		width:24%;	
+	}
+	.tab-cell-3-4{
+		width:74%;	
+	}
+	.tab-cell-1-5{
+		width:19%;	
+	}
+	.tab-cell-2-5{
+		width:39%;	
+	}
+	.tab-cell-3-5{
+		width:59%;	
+	}
+    .tab-cell-7-12{
+        width:55%;
+    }        
+    .tab-cell-5-12{
+        width:42%;
+    }        
+
+	
+	.tab-m-b-20{
+		margin-bottom:20px;	
+	}
+	.tab-p-b-20{
+		padding-bottom:20px;	
+	}
+	
+
+    .hide-on-pc{
+        display: block; 
+    }
+    .hide-on-pad {
+        display: block; 
+    }
+    .hide-on-tab {
+        display: none;
+    }
+	
+	.show-on-tab{
+		display:block;	
+	}
+	
+	/*For site only*/
+
+    .ms-layer{
+        display:none;
+    }
+
+	.cell-tools-box-1-6{
+		margin:5px 0px;
+        background:#e2ffcf;
+
+	}
+	.hvr-rectangle-in:before{
+        background:#e2ffcf;
+	}
+
+    .cell-tools-box-1-6 a{
+        color:#0f8c43;
+    }
+
+	.xemay{
+	    background: url(../images/icon/icon-xemay.png) no-repeat top left;
+		
+	}
+	
+	.maytinh-dienthoai{
+		background:url(../images/icon/icon-dienmay.png) no-repeat top left;
+		
+	}
+
+	.tienmat{
+		background:url(../images/icon/icon-tienmat.png) no-repeat top left;
+		
+	}
+
+	.diembanhang{
+		background:url(../images/icon/icon-tuvanbanhang.png) no-repeat top left;
+
+	}
+
+	.diemnoptien{
+		background:url(../images/icon/icon-diemnoptien.png) no-repeat top left;
+
+	}
+
+	.khoanvay{
+		background:url(../images/icon/icon-tracuukhoanvay.png) no-repeat top left;
+
+	}
+	.tab-home .item-tab-home.active
+    {
+        display:none;
+	}
+	
+	.box-icon-tools {
+		height: 60px;
+		display: table-cell;
+		vertical-align: middle;
+		padding-top: 0px;
+		padding-left: 60px;
+
+		
+	}
+	
+	.bg-line-home{
+		background:none;
+	}
+	
+	.benefit-name span{
+		display:block;
+		float:left;
+	}
+	.modal-box{
+		width:90%;
+	}
+	#cusreview .pic{
+		float:left;
+	}
+	.info-cus{
+		text-align:justify !important;
+	}
+	.cus-review{
+		padding-bottom:0px;
+	}
+	.footer-menu .MenufooterItem{
+		padding-right:50px;
+	}
+	
+	.benefit-name{
+		
+		margin-left:10px;
+	}
+	
+	.mm-list .have-bg{
+		background:none !important;
+		background-repeat:no-repeat;
+	}
+	
+	.menu-left-right{
+		display:none;
+	}
+	.menu-drop-right{
+		
+		display:block;
+	}
+	
+    .hide-on-pad
+    {
+        display:none
+    }
+    .footer-menu .MenufooterItem
+    {
+        padding-right:10px;
+    }
+    .loan-step-3::before
+    {
+        display:none;
+    }
+    .loan-step-4::before
+    {
+        left:86px;
+    }
+    .loan-step-5
+    {
+        margin-top:10px;
+    }
+    .title-calc
+    {
+        border-radius:0;
+        -webkit-border-radius: 6px 6px 0 0;
+border-radius: 6px 6px 0 0;
+    }
+    .calc-result
+    {
+    
+        border-radius:0;
+        border:solid 1px #a7a7a7;
+        -webkit-border-radius: 0 0 6px 6px;
+border-radius: 0 0 6px 6px;
+    }
+    .benefit-name .pd-top
+    {
+        padding-top:5px;
+
+    }
+	.product-benefit-name
+    {
+        margin-bottom:15px;
+
+	}
+    .leftpage
+    {
+        width:100%;
+    }
+    .rightpage
+    {
+        width:100%;
+    }
+    .cell-job-left
+    {
+        width:100%;
+        margin-bottom:20px;
+    }
+    .cell-job-left .c20{
+        height:10px;
+    }
+	.cell-job-right
+    {
+        width:100%;
+	}
+    .job-download-link
+    {
+        text-align:left;
+        width:100%;
+    }
+    .job-download-link a{
+        color:#fff;
+        text-decoration:none;
+        margin-right:0;
+        text-align:left;
+    }
+        .job-download-link a:hover {
+            text-decoration:none;
+            color:#fff;
+        }
+        .job-form
+        {
+            margin-left:0 !important;
+            margin-right:0 !important;
+
+        }
+        .c40{
+            height:20px;
+        }
+        .btn-reset
+        {
+            width:100% !important;
+        }
+        .btn-send
+        {
+            width:100%;
+
+        }
+.frm-home
+        {
+    margin-top:20px
+
+        }
+.w900
+{
+    width:100%;
+}
+.item-btn-tracuu
+{
+    float:left;
+    margin-left:0;
+    margin-right:15px;
+
+}
+
+.icon-sanpham .item-uudiem
+        {
+            width:50%;
+            border-right:none !important;
+            padding-bottom:5px !important;
+            padding-left:10px;
+        }
+        .title-uudiem
+        {
+            padding-top:12px;
+            font-size:14px !important;
+
+        }
+        .btn-xx-des
+        {
+            display:none;
+        }
+        .btn-xx-mobi
+        {
+            display:block;
+            width:260px !important;
+            margin:auto;
+            float:none;
+            overflow:hidden;
+            margin-bottom:20px;
+        }
+        .btn-xx-mobi .btn-tracuu .item-btn-tracuu
+        {
+            width:105px;
+            height:105px;
+        }
+        .btn-xx-mobi .item-btn-tracuu
+        {
+            padding:5px;
+            text-align:center;
+            
+
+        }
+        .btn-xx-mobi .item-btn-tracuu-diemnoptien a
+        {
+            padding-left:0;
+            padding-top:40px;
+            font-weight:normal;
+            font-size:12px;
+            background-position:top center;
+
+        }
+        .btn-xx-mobi .item-btn-tracuu-bg a
+        {
+            padding-left:0;
+            padding-top:40px;
+            font-weight:normal;
+            font-size:12px;
+            background-position:top center;
+            line-height:normal;
+        }
+
+        .panel-map-bot
+        {
+            display:none;
+        }
+        .item-why
+        {
+            margin-bottom:15px;
+        }
+        .table-res
+    {
+        width:100%;
+        overflow-x:auto;
+    }
+}
+@media handheld, only screen and (max-width: 767px) {
+        .tab-home-content
+        {
+
+        }
+        .tab-home-content .cell-1-3
+        {
+            width:100%
+        }
+        .benefit-name
+        {
+            width:48%;
+            float:left;
+
+        }
+        .frm-gioithieu{
+            width:100%;
+        }
+        .ungdung
+        {
+            float:none;
+            margin-top:10px;
+        }
+        .smo-footer
+        {
+            float:none;
+            margin-top:10px;
+
+        }
+        .icon-sanpham
+        {
+            width:100%;
+
+        }
+        .icon-sanpham .cell-1-3
+        {
+            width:50%;
+            border-right:none;
+        }
+        .benefit-name
+        {
+            width:100%;
+            margin-bottom:10px;
+            border-right:none;
+        }
+        .icon-sanpham .flex-container .cell-1-3 div:last-child
+        {
+            margin-bottom:10px;
+        }
+        .link-download{
+            padding-bottom:10px;
+        }
+         #GridAlbum .item
+         {
+             width:48% !important;
+
+         }
+         .title-home
+         {
+             font-size:18px;
+         }
+         .frm-tracukhoanvay
+         {
+             width:100%;
+
+         }
+         .frm-tracuu
+         {
+             width:100%;
+         }
+
+}
+@media handheld, only screen and (max-width: 540px) {
+    .col-table
+    {
+        width:100%;
+    }
+    .pright-20
+    {
+        margin-right:0;
+    }
+    .pleft-20
+    {
+        margin-left:0;
+    }
+    
+    .bd-right
+    {
+        border-right:none;
+    }
+    .box-input label
+    {
+        float:none;
+    }
+    .btn-regiter-page
+    {
+        width:100%;
+    }
+    .nav-mobile
+    {
+        display:block;
+    }
+    .contact-form .cell-input-1-3
+    {
+        width:100%;
+
+    }
+    .footer-menu a
+    {
+        font-size:14px;
+    }
+    .benefit-name
+    {
+        width:100%;
+        float:left;
+        margin-left:0;
+    }
+    .txt-slider-1
+    {
+        width:100%;
+    }
+    .mgr-30
+    {
+        margin-right:0;
+
+    }
+    .mb-p-b-0
+    {
+        padding-bottom:0px;
+        margin-bottom:0 !important;
+    }
+    .lblpro{
+        font-weight:700;
+        margin-bottom:5px;
+    }
+    .loan-step-2::before
+    {
+        display:none;
+    }
+    .loan-step-4::before
+    {
+        display:none;
+
+    }
+    .quy-trinh-cho-vay .loan-step-5
+    {
+        width:80% !important;
+    }
+    .loan-step-1::before
+    {
+        display:none;
+    }
+    .tab-home .item-tab-home
+    {
+        width:100%;
+        float:none;
+    }
+    .pc-p-l10
+    {
+        padding-left:0;
+        padding-top:10px;
+    }
+    .jobhome
+    {
+        margin-top:15px;
+    }
+    .hvr-float
+    {
+        width:100%;
+    }
+    .product-home
+    {
+        width:42px;
+        height:42px;
+        line-height:42px;
+        float:left;
+        margin-right:10px;
+        background-size:100%;
+        margin-bottom:0;
+    }
+    .tab-home .item-tab-home
+    {
+        text-align:left;
+        padding:10px;
+    }
+    .hvr-float .name
+    {
+        padding-top:7px;
+    }
+    .tab-home .c30,.tab-home .c10
+    {
+        display:none;
+    }
+    .showtabmobile
+    {
+        display:block;
+        margin-top:20px;
+    }
+    .showtabmobile .c30,.showtabmobile .c10{
+        display:none;
+    }
+    .tab-home
+    {
+        margin-left:10px;
+        margin-right:10px;
+        display:none;
+    }
+    .tab-home .grid{
+        padding-left:0;
+        padding-right:0;
+    }
+    .wchome
+    {
+
+    }
+    .wchome img
+    {
+        display:none;
+
+    }
+    .box-icon-tools br
+    {
+        display:none
+    }
+    .bfooter
+    {
+        /*padding-top:10px;*/
+    }
+    .contet-footer
+    {
+
+    }
+    .logo-footer
+    {
+        text-align:center;
+
+    }
+    .contet-footer>div>div
+    {
+        padding-bottom:0px;
+        text-align:center;
+
+    }
+    .filter-map
+    {
+        position:static;
+        padding-bottom:10px;
+
+    }
+    .filter-map select:first-child{
+    -webkit-border-radius:6px 6px 6px 6px;
+border-radius:6px 6px 6px 6px;
+}
+    .filter-map select
+    {
+        width:100%;
+        float:none;
+        margin-bottom:5px;
+        position:static;
+        -webkit-border-radius: 6px 6px 6px 6px;
+       border-radius: 6px 6px 6px 6px;
+    }
+    .button-search
+    {
+        width:100%;
+        position:static;
+        -webkit-border-radius: 6px 6px 6px 6px;
+        border-radius: 6px 6px 6px 6px;
+    }
+    .ullist .titlemap span
+    {
+        position:static !important;
+        display:block;
+        margin-top:4px;
+    }
+    .page-title
+    {
+        font-size:28px;
+    }
+    .product-benefit-name
+    {
+        font-size:24px;
+
+    }
+    .news-top-1 .img-top-1
+    {
+        width:100%;
+        margin-right:0;
+        margin-bottom:10px;
+
+    }
+    .news-top-1
+    {
+        padding-bottom:15px;
+        border-bottom:solid 2px #72c43b 
+
+    }
+    
+    .icon-map-bot .mes-icon-map-bot
+    {
+        padding-top:20px
+    }
+    .icon-map-bot .mes-icon-map-bot br
+    {
+        display:none;
+        
+
+    }
+    .col-search-bd-left
+    {
+        border-right:none;
+
+    }
+    .box-search-map
+    {
+        border:none;
+
+    }
+    .opt-search
+    {
+        border:solid #6dc139 2px;
+        margin-bottom:5px;
+        -webkit-border-radius: 6px 6px 6px 6px;
+border-radius: 6px 6px 6px 6px;
+
+    }
+    .cell-search-2
+    {
+        width:100%;
+        margin-top:4px;
+    }
+    .cell-search-4
+    {
+        width:100%;
+    }
+    #btnSearchBrand
+    {
+        position:relative;
+        width:100%;
+        margin-left:0;
+
+    }
+    .title-calc
+    {
+        font-size:15px;
+        padding:8px 6px;
+
+    }
+    .calc-result .value
+    {
+        font-size:23px;
+
+    }
+    .footer
+    {
+        padding-top:20px;
+    }
+    .benefit-name
+    {
+        margin-bottom:10px;
+
+    }
+    .icon-sanpham .flex-container .cell-1-3 div:last-child
+    {
+        margin-bottom:10px;
+    }
+    .item-tab
+    {
+        background-repeat:no-repeat;
+        background-size:40px;
+        padding-left:50px;
+        height:40px;
+        background-position:left center !important;
+        padding-top:0 !important;
+
+    }
+    .icon-sanpham .cell-1-3
+    {
+        border-right:none;
+    }
+    .box-calc-result
+    {
+        margin-top:15px;
+        -webkit-border-radius: 6px;
+border-radius: 6px;
+
+    }
+    .panel-map-bot
+    {
+        display:none;
+    }
+    
+    .cus-review{
+        display:none;
+    }
+    .line-grad
+    {
+        display:none;
+    }
+    .w540{
+         width:100%;
+         margin-bottom:10px !important;
+    }
+    .item-btn-tracuu-diemnoptien
+    {
+        width:100%;
+        margin-bottom:10px;
+    }
+    .item-btn-tracuu-bg
+    {
+        width:100%;
+    }
+    .icon-sanpham .cell-1-3
+        {
+            width:100%;
+            border-right:none;
+        }
+        .benefit-name
+        {
+            width:100%;
+            margin-bottom:10px;
+            border-right:none;
+        }
+        .tinhtoankhoanvay
+        {
+            margin-top:10px;
+        }
+        .quy-trinh-vay
+        {
+            font-size:18px;
+        }
+        .box-footer-hd-mobile
+        {
+            display:none
+
+        }
+        .footer
+        {
+            padding-top:0;
+        }
+        .mr40
+        {
+            margin-bottom:10px;
+
+        }
+        .item-ungdungs
+        {
+            text-align:center;
+        }
+        .item-ungdungs .item-ungdung
+        {
+            display:inline-block;
+            float:none;
+
+        }
+        .des-uudiem
+    {
+        margin-top:10px;
+        margin-bottom:20px;
+        padding:0 !important
+    }
+        .btnchimuctrang
+        {
+            display:block;
+        }
+        .main-slide-destop
+        {
+            display:none;
+        }
+        .main-slide-mobile
+        {
+            display:block;
+        }
+        
+        .title-map-home
+        {
+            font-size:16px;
+            padding-top:0px;
+        }
+        .organList
+        {
+            margin-left:-10px !important;
+            margin-right:-10px !important;
+        }
+        .organList .cell-organ-1-3
+        {
+            width:50% !important;
+            padding-left:10px !important;
+            padding-right:10px !important;
+        }
+        .ifm-videodetail {
+            height:320px;
+        }
+        
+
+}
+@media handheld, only screen and (max-width: 530px) { 
+    .o-intro
+    {
+        min-height:50px;
+    }
+    .ifm-videodetail {
+        height:300px;
+    }
+    
+}
+@media handheld, only screen and (max-width: 477px) { /*mobile*/
+    .btn-cus
+    {
+        top:38%;
+    }
+    .prev-news-home
+    {
+        right:20px;
+    }
+    .next-news-home
+    {
+        left:20px;
+    }
+    .item-btn-tracuu-diemnoptien
+    {
+        padding-top:15px;
+        padding-bottom:15px;
+
+    }
+    .item-btn-tracuu-diemnoptien a br
+    {
+        display:none;
+
+    }
+    .product-benefit-name
+    {
+        font-size:20px;
+
+    }
+
+	.grid {
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.mobile-cell-1-1{
+		width:100%;	
+	}
+	.mobile-cell-1-2{
+		width:49%;	
+	}
+	.mobile-cell-1-3{
+		width:32.33%;	
+	}
+	.mobile-cell-2-3{
+		width:65.66%;	
+	}
+	.mobile-cell-1-4{
+		width:24%;	
+	}
+	.mobile-cell-3-4{
+		width:74%;	
+	}
+	.mobile-cell-1-5{
+		width:19%;	
+	}
+	.mobile-cell-2-5{
+		width:39%;	
+	}
+	.mobile-cell-3-5{
+		width:59%;	
+	}
+
+	.mobile-m-b-20{
+		margin-bottom:20px;	
+	}
+	.mobile-p-b-20{
+		padding-bottom:20px;	
+	}
+    .hide-on-pc{
+        display: block; 
+    }
+    .hide-on-pad {
+        display: block; 
+    }
+    .hide-on-tab {
+        display: block; 
+    }
+    .hide-on-mobile {
+        display: none !important;
+
+    }   
+	.show-on-mobile{
+		display:block;	
+	}
+	
+	
+	.pc-p-b-20{
+		margin:10px 0px;
+	}
+	
+	
+	
+	/*for site only*/
+	
+	[class*='loan-step-']{
+		width:48% !important;
+		margin:0 auto;
+	}
+	
+	.hotline-top{
+		float:left;
+	}
+	
+	.footer-menu{
+		background:none;
+	}
+	.footer-menu a{
+		color:#6dc139;
+	}
+	.footer-menu .MenufooterItem{
+		padding:0px;
+		padding-top:10px;
+		width:100%;
+	}
+	.logo-footer{
+		width:100%;
+	}
+	.contet-footer{
+		width:100%;
+	}
+	.social-link{
+		position:inherit;
+	}
+	.social-link a{
+		float:left;
+	}
+	
+    .cell-tools-box-1-6{
+        padding:0px 10px;
+    }
+    .item-btn-tracuu
+    {
+        
+    }
+    .icon-map-bot
+    {
+        margin-bottom:15px;
+
+    }
+    .header .btn-dangkyngay
+    {
+        display:none
+    }
+    
+    .panel-map-bot
+    {
+        display:none;
+    }
+    .news-home
+    {
+        display: block;
+
+    }
+    .cus-review
+    {
+        display:none
+    }
+    .line-grad
+    {
+        display:none
+    }
+    .line-height-moblie
+    {
+        line-height:46px;
+        min-height:51px;
+
+    }
+    .icon-sanpham .item-uudiem
+    {
+        width:100%;
+    }
+    .ui-slider .valueAbsolute
+    {
+        margin-left:-20px;
+    }
+    .title-footer
+    {
+        text-align:center;
+    }
+    .smo-footer
+    {
+        text-align:center;
+    }
+    .box-footer-show-mobile .title-footer
+    {
+        text-align:left;
+    }
+     
+    .btn-contact
+    {
+        width:100%;
+    }
+     
+}
+@media handheld, only screen and (max-width: 440px) { /*mobile*/
+   .social-link
+   {
+       display:none;
+
+   }                                                      
+   .hotline-top
+   {
+       float:left;
+       padding-left:5px;
+   }
+   .title-calc
+   {
+       text-align:center;
+       padding-top:12px;
+       padding-bottom:12px;
+
+   }
+   .panel-map-top
+   {
+       padding-top:20px;
+       padding-bottom:20px;
+
+   }
+   .panel-map-top .title-map-home
+   {
+       font-size:20px;
+       line-height:normal;
+       min-height:51px
+
+   }
+  
+   .tab-home .item-tab-home
+   {
+       font-size:16px;
+   }
+   .quy-trinh-vay
+        {
+            
+        }
+   .title-map-home
+   {
+       padding-top:12px;
+            padding-bottom:14px;
+   }
+   .btn-cus
+    {
+        top:35%;
+    }
+   .product-tool-name
+   {
+       font-size:18px;
+   }
+   .ifm-videodetail {
+            height:240px;
+        }
+}
+@media handheld, only screen and (max-width: 440px) {
+   
+}
+@media handheld, only screen and (max-width: 390px) {
+   
+}
+@media handheld, only screen and (max-width: 360px) {
+    
+}
+@media handheld, only screen and (max-width: 320px) {
+    
+}
+
+
+
+
+
+

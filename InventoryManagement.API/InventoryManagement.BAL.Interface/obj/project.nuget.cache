@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "H5nE7xJhNG/tVezNaO5b06OeTKPVqm4I5Zi2NWz7F0XU93oQXAlCPbtKjyI+ss2kr8h+rFyqx01PFRefdZebYA==",
+  "success": true,
+  "projectFilePath": "E:\\Angular\\API\\InventoryManagement\\InventoryManagement.API\\InventoryManagement.BAL.Interface\\InventoryManagement.BAL.Interface.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Quan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Quan\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

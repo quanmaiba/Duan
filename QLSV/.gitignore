@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Student.API/bin/Debug/netcoreapp2.2
+/Student.API/obj
+/Student.BAL/bin/Debug
+/Student.BAL/obj
+/Student.BAL.Interface/bin/Debug
+/Student.BAL.Interface/obj
+/Student.DAL/bin/Debug
+/Student.DAL/obj
+/Student.DAL.Interface/bin/Debug
+/Student.DAL.Interface/obj
+/Student.Domain/bin/Debug
+/Student.Domain/obj
+/WebApplication1/obj
+/WebApplication1

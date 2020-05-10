@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QLNV.BAL.Interface\QLNV.BAL.Interface.csproj" />
+    <ProjectReference Include="..\QLNV.DAL.Interface\QLNV.DAL.Interface.csproj" />
+  </ItemGroup>
+
+</Project>

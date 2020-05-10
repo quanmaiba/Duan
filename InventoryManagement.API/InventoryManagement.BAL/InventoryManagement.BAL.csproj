@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InventoryManagement.BAL.Interface\InventoryManagement.BAL.Interface.csproj" />
+    <ProjectReference Include="..\InventoryManagement.DAL\InventoryManagement.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

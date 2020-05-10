@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/QLSV.WEB/.vs/QLSV.WEB
+/QLSV.WEB/QLSV.WEB/bin/Debug/netcoreapp2.2
+/QLSV.WEB/QLSV.WEB/obj
+/QLSV.WEB1

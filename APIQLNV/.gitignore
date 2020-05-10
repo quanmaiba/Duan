@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/QLNV.API/bin/Debug/netcoreapp2.2
+/QLNV.API/obj
+/QLNV.BAL/bin/Debug/netstandard2.0
+/QLNV.BAL/obj
+/QLNV.BAL.Interface/bin/Debug/netstandard2.0
+/QLNV.BAL.Interface/obj
+/QLNV.DAL/bin/Debug/netstandard2.0
+/QLNV.DAL/obj
+/QLNV.DAL.Interface/bin/Debug/netstandard2.0
+/QLNV.DAL.Interface/obj
+/QLNV.Domain/bin/Debug/netstandard2.0
+/QLNV.Domain/obj

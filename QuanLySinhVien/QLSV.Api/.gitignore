@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/QLSV.API/bin/Debug/netcoreapp3.1
+/QLSV.API/obj
+/QLSV.BAL/bin/Debug
+/QLSV.BAL/obj
+/QLSV.BAL Interface/bin/Debug/netcoreapp3.1
+/QLSV.BAL Interface/obj
+/QLSV.DAL/bin/Debug
+/QLSV.DAL/obj
+/QLSV.DAL Interface/bin/Debug
+/QLSV.DAL Interface/obj
+/QLSV.Domain/bin/Debug
+/QLSV.Domain/obj
+/QLSV.API/bin/Debug/netcoreapp3.0
+/QLSV.BAL Interface/bin/Debug/netcoreapp3.0

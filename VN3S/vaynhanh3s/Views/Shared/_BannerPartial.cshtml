@@ -1,0 +1,96 @@
+﻿@using vaynhanh3s.Domain.Response.Banner
+
+@{
+    var banners = ViewBag.Banners == null ? new List<GetsResult>() : ViewBag.Banners as List<GetsResult>;
+}
+
+<div class="main-slide-destop">
+    <div class="slidermar">
+        @if (banners != null && banners.Any())
+        {
+            <div class="master-slider ms-skin-default" id="masterslider">
+                @foreach (var banner in banners)
+                {
+                    <div class="ms-slide slide-1" data-delay="5">
+                        <img src="@banner.Url" data-src="@banner.Url" alt="" />
+                        <div class="ms-layer text1 caps" style="left: 100px; top: 90px;" data-type="text" data-effect="top(45)" data-duration="1800" data-delay="0" data-ease="easeOutExpo"></div>
+                        <div class="ms-layer text2" style="left: 100px; top: 175px;" data-type="text" data-effect="bottom(45)" data-duration="1800" data-delay="500" data-ease="easeOutExpo"></div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+<div class="main-slide-mobile">
+    <div class="swiper-container" id="slidemobliehome">
+        <div class="swiper-wrapper">
+            @if (banners != null && banners.Any())
+            {
+                foreach (var banner in banners)
+                {
+                    <div class="swiper-slide">
+                        <div class="pro-home-img">
+                            <img src="@banner.Url" />
+                        </div>
+                        <div class="title-slide-mobile"></div>
+                        <div class="intro-slide-mobile"></div>
+                        <div class="view-detail-slide-mobile">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                }
+            }
+        </div>
+    </div><div class="swiper-pagination"></div>
+</div>
+
+
+<script>
+    var swiper_cat_home = new Swiper('#slidemobliehome', {
+        loop: true,
+        slidesPerView: 1,
+        autoplay: true,
+        speed: 900,
+        spaceBetween: 0,
+        nextButton: '.prohot-next',
+        prevButton: '.prohot-prev',
+        autoHeight: true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+    });
+</script>
+
+
+
+<!-- MasterSlider -->
+<link rel="stylesheet" href="Scripts/MasterSlider/masterslider.css">
+<link rel="stylesheet" href="Scripts/MasterSlider/style.css">
+<script src="Scripts/MasterSlider/jquery.easing.min.js"></script>
+<script src="Scripts/MasterSlider/masterslider.min.js"></script>
+<script type="text/javascript">
+    (function ($) {
+        "use strict";
+        var slider = new MasterSlider();
+        // adds Arrows navigation control to the slider.
+        slider.control('arrows');
+        slider.control('bullets');
+
+        slider.setup('masterslider', {
+            width: 1400,    // slider standard width
+            height: 330,   // slider standard height
+            space: 0,
+            speed: 45,
+            layout: 'fullwidth',
+            loop: true,
+            preload: 0,
+            autoHeight: true,
+            autoplay: true,
+            view: "parallaxMask"
+        });
+    })(jQuery);
+</script>
+<!-- end slide -->

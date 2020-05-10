@@ -1,0 +1,25 @@
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ThuanThao
+/ThuanThao/.vs/ThuanThao
+/ThuanThao/bin
+/ThuanThao/obj/Debug
+/ThuanThao/ThuanThao.csproj.user
+/ThuanThao.Contract/bin/Debug
+/ThuanThao.DAL/bin/Debug
+/ThuanThao.Domain/bin/Debug
+/ThuanThao.Util/bin/Debug
+*/bin/
+*/obj/
+packages
+.vs/
+*.DotSettings
+/ThuanThao/Properties/PublishProfiles/CustomProfile.pubxml.user
+/ThuanThao/Properties/PublishProfiles/CustomProfile.pubxml
+/ThuanThao/Upload/Images
+obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+obj/Debug/vaynhanh3s.Contract.csproj.CoreCompileInputs.cache
